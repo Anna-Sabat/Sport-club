@@ -193,7 +193,7 @@ img {
     line-height: 100%;
     letter-spacing: -0.02em;
     color: #0c0c0c;
-    margin-bottom: 24px;
+    margin-bottom: 70px;
 }
 
 .flip-card {
@@ -241,6 +241,7 @@ img {
 .our-team {
     display: flex;
     background-color: #f6f1f3;
+    margin-left: 80px;
 }
 
 .our {
@@ -270,7 +271,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 72px;
+    gap: 72px 24px;
     margin-bottom: 60px;
 }
 
@@ -407,7 +408,8 @@ img {
     align-items: center;
     width: 100%;
     gap: 48px;
-    margin-left: 220px;
+    margin-left: 200px;
+    margin-top: 80px;
 }
 
 .img-group-left {
