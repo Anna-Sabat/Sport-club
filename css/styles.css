@@ -55,14 +55,14 @@ img {
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     background-color: #090809;
 }
 
 .header-item {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 .header-list {
@@ -73,8 +73,35 @@ img {
 .header-list:hover,
 .header-list:focus {
     background-color: #f1f1f1;
-    border: 2px solid #43caf3;
+    border: 2px solid #30d5c8;
     color: #090809;
+}
+
+.header-icons {
+    fill: #fff;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.header-icons:hover,
+.header-icons:focus {
+    fill: #30d5c8;
+}
+
+.link-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    fill: #f4f4fd;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-icon:hover,
+.link-icon:focus {
+    fill: #30d5c8;
 }
 
 .navigation {
@@ -90,7 +117,14 @@ img {
 .address-list {
     display: flex;
     gap: 40px;
+    margin-right: 40px;
 }
+
+.address-link:hover,
+.address-link:focus {
+    color: #30d5c8;
+}
+
 
 .address-link {
     font-weight: 400;
@@ -103,6 +137,10 @@ img {
     text-decoration: none;
     color: #fff;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-icons {
+    display: none;
 }
 
 
@@ -123,11 +161,10 @@ img {
     padding: 16px 32px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    background-color: #43caf3;
+    color: #090809;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #fff;
     min-width: 169px;
     height: 56px;
     border: none;
@@ -139,12 +176,16 @@ img {
 
 .button:hover,
 .button:focus {
-    background-color: #ff8c2e;
+    background-color: #30d5c8;
+    color: #fff;
 }
 
-.button:active {
-    background-color: #ff8c2e;
-}
+
+
+
+
+
+
 
 .our-title {
     font-weight: 700;
@@ -155,16 +196,10 @@ img {
     margin-bottom: 24px;
 }
 
-.flip-card-front {
-    display: flex;
-    justify-content: center;
-}
-
-
 .flip-card {
     background-color: transparent;
-    width: 240px;
-    height: 280px;
+    width: 270px;
+    height: 300px;
     border: 1px solid #f1f1f1;
     perspective: 1000px;
     /* Remove this if you don't want the 3D effect */
@@ -197,7 +232,8 @@ img {
 
 /* Style the back side */
 .flip-card-back {
-    background-image: linear-gradient(to bottom, rgb(74, 183, 238), rgba(232, 232, 229, 0.939));
+    background-image: linear-gradient(to bottom, rgb(62, 195, 251), rgba(170, 171, 178, 0.7));
+    color: rgb(168, 162, 162);
     transform: rotateY(180deg);
     align-content: center;
 }
@@ -218,11 +254,22 @@ img {
 
 }
 
+.our-slogan {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #5e5e5e;
+    text-align: center;
+    margin: 0 24px 24px;
+    align-content: center;
+}
 
 .team-list {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 72px;
     margin-bottom: 60px;
 }
@@ -231,16 +278,10 @@ img {
     border-radius: 8px;
     position: relative;
     overflow: hidden;
-    width: calc((100% - 23px * 4) / 5);
 }
 
 .team-item:hover,
 .team-item:focus {
-    border-radius: 8px;
-    border: 1px solid #6e7a9c;
-    background-color: #3e3c3d;
-    transform: scale3d(1.1, 1.1, 1.1);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     transition: transform 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -249,24 +290,23 @@ img {
 
 .our-overlay-title {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #5e5e5e;
-    margin-bottom: 40px;
     text-align: center;
-
+    margin: 40px 0 20px;
 }
 
 .text-accent {
     font-weight: 400;
-    font-size: 11px;
+    font-size:12px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #5e5e5e;
     text-align: left;
-    padding: 0 8px;
+    padding-left: 10px;
 }
 
 .our-text {
@@ -276,38 +316,21 @@ img {
     letter-spacing: 0.02em;
     color: #5e5e5e;
     text-align: center;
-    margin: 8px;
+    margin: 10px;
+    padding: 0 10px;
 }
 
 
-.our-btn {
-    font-family: "Dancing Script", sans-serif;
+.our-text2 {
     font-weight: 400;
-    background-color: #f7e7e7;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.5;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
     color: #5e5e5e;
-    display: block;
-    align-items: center;
-    text-align: center;
-    min-width: 26px;
-    height: 26px;
-    border: 1px solid #8693f5;
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 5px 10px 10px;
-    margin: 20px auto;
-    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: left;
+    margin: 10px;
+    padding: 0 10px;
 }
-
-
-.our-btn:hover,
-.our-btn:focus {
-    color: #211eef;
-    background-color: #f6eff2;
-}
-
 
 .team-item:hover .our-team-overlay {
     transform: translateX(0);
@@ -317,17 +340,13 @@ img {
     transform: translateX(0);
 }
 
-.our-overlay-title {
-    text-align: center;
-    margin: 20px 0 20px;
-}
 
 .overlay-item {
     font-size: 14px;
     padding-left: 8px;
     padding-top: 4px;
     border-radius: 4px;
-    background-color: #e0c5debf;
+    background-color: #53ccedd2;
     border: 1px solid rgba(113, 112, 112, 0.2);
 }
 
@@ -336,6 +355,7 @@ img {
     background-color: #fbf0f0;
     color: #090809;
 }
+
 
 
 @media screen and (min-width: 768px) {
@@ -381,3 +401,27 @@ img {
     }
 
 }
+
+.list-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 48px;
+    margin-left: 220px;
+}
+
+.img-group-left {
+    width: 400px;
+    height: 400px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
+}
+
+.img-group-right {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
+}
+

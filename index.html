@@ -15,35 +15,57 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body>
     <header class="header">
       <div class="header-back">
-      <nav class="navigation">
-      <ul class="header-item">
-        <li class="header-list"><a href=""></a>Головна</li>
-        <li class="header-list"><a href=""></a>Про нас</li>
-        <li class="header-list"><a href=""></a>Наша команда</li>
-        <li class="header-list"><a href=""></a>Послуги</li>
-        <li class="header-list"><a href=""></a>Групові заняття</li>
-      </ul>
-      </nav>
-      <address class="address">
+        <nav class="navigation">
+          <ul class="header-item">
+            <li class="header-list"><a href=""></a>Головна</li>
+            <li class="header-list"><a href=""></a>Про нас</li>
+            <li class="header-list"><a href=""></a>Наша команда</li>
+            <li class="header-list"><a href=""></a>Послуги</li>
+            <li class="header-list"><a href=""></a>Групові заняття</li>
+          </ul>
+        </nav>
+        <address class="address">
           <ul class="address-list">
             <li>
-              <a class="address-link" blank href="https://www.instagram.com/profesional.poltava/?hl=ru"
-                >Instagram</a
+              <a
+                class="link-icon"
+                href="https://www.instagram.com/profesional.poltava/?hl=ru"
+                target="_blank"
               >
+                <svg class="svg-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
             <li>
               <a class="address-link" href="tel:(095) 587-60-60"
                 >(095) 587-60-60</a
               >
+              <a class="address-link" href="tel:(098) 587-60-60"
+                >(098) 587-60-60</a
+              >
             </li>
           </ul>
         </address>
-        </div>
+        <svg
+          class="header-icons"
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 448 512"
+        >
+          <path
+            d="M16 132h416c8.8 0 16-7.2 16-16V76c0-8.8-7.2-16-16-16H16C7.2 60 0 67.2 0 76v40c0 8.8 7.2 16 16 16zm0 160h416c8.8 0 16-7.2 16-16v-40c0-8.8-7.2-16-16-16H16c-8.8 0-16 7.2-16 16v40c0 8.8 7.2 16 16 16zm0 160h416c8.8 0 16-7.2 16-16v-40c0-8.8-7.2-16-16-16H16c-8.8 0-16 7.2-16 16v40c0 8.8 7.2 16 16 16z"
+          />
+        </svg>
+      </div>
       <h1 class="visually-hidden">Головна</h1>
       <div class="container header-container">
         <div class="video-bg">
@@ -67,12 +89,10 @@
         </div>
       </section>
 
-
       <!--section2-->
       <section id="our" class="section">
         <div class="container">
           <h2 class="our-title">Наша команда</h2>
-          <section class="section our-team">
           <ul class="team-list">
             <li class="team-item">
               <div class="flip-card">
@@ -80,104 +100,28 @@
                   <div class="flip-card-front">
                     <img
                       class="services-img"
-                      width="300"
-                      height="400"
-                      src="./images/lernik-table.png"
-                      alt="фото Лерник Матосян - Власник"></img>
-                  </div>
-                  <div class="flip-card-back">
-                    <h2 class="our-overlay-title">Матосян Лернік</h2>
-                    <p class="our-text">Президент клубу</p>
-                    <ul class="text-accent">
-                      <li class="text-accent">Заслужений тренер України</li>
-                      <li class="text-accent">5-ти разовий чемпіон України з Пауерліфтингу</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="team-item">
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img
-                      class="services-img"
-                      src="./images/polapa-pk.png"
-                      alt="фото Марина Полапа"></img>
-                  </div>
-                  <div class="flip-card-back">
-                    <h2 class="our-overlay-title">Полапа Марина</h2>
-                    <p class="our-text">Персональний тренер Premium</p>
-                    <ul class="text-accent">
-                      <li class="text-accent">* Майстер спорту України з бодібілдингу</li>
-                      <li class="text-accent">* Абсолютна чемпіонка Європи</li>
-                      <li class="text-accent">* Чемпіонка світу</li>
-                      <li class="text-accent">* Багаторазова чемпіонка України</li>
-                      <li class="text-accent">* Старший менеджер з продажу</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="team-item">
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img
-                      class="services-img"
-                      width="210"
+                      width="270"
                       height="300"
-                      src="./images/Marina.jpg"
-                      alt="фото Щербина Максим"
+                      src="./images/lernik-tel@2x-min.png"
+                      alt="фото Лернік Матосян"
                     />
                   </div>
                   <div class="flip-card-back">
-                    <h2 class="our-overlay-title">Щербина максим</h2>
-                    <p class="our-text">Персональний тренер Premium</p>
-                    <button class="our-btn" type="button">ЗАПИС ОНЛАЙН</button>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="team-item">
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img
-                      class="services-img"
-                      width="210"
-                      height="300"
-                      src="./images/Olga.jpg"
-                      alt="фото Дрига Олена"
-                    />
-                  </div>
-                  <div class="flip-card-back">
-                    <h2 class="our-overlay-title">Дрига Олена</h2>
-                    <p class="our-text">Персональний тренер VIP+</p>
-                    <button class="our-btn" type="button">ЗАПИС ОНЛАЙН</button>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="team-item">
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img
-                      class="services-img"
-                      width="210"
-                      height="300"
-                      src="./images/Oksana.jpg"
-                      alt="фото Порицька Дарʼя"
-                    />
-                  </div>
-                  <div class="flip-card-back">
-                    <h2 class="our-overlay-title">Порицька Дарʼя </h2>
+                    <h2 class="our-overlay-title">Президент клубу</h2>
+                    <p class="our-text">Освіта</p>
+                    <ol class="text-accent">
+                      <li class="text-accent">*ПДПУ</li>
+                      <li class="text-accent">
+                        *Факультатив фізичного виховання
+                      </li>
+                      <li class="text-accent">
+                        *Факультатив економіки підприємства
+                      </li>
+                    </ol>
+                    <p class="our-text">Заслужений тренер України</p>
                     <p class="our-text">
-                      Тренер VIP категорії
+                      5-ти разовий чемпіон України з Пауерліфтингу
                     </p>
-                    <p class="our-text">Спеціалізація: силовий тренінг, корекція фігури</p>
-                    <button class="our-btn" type="button">ЗАПИС ОНЛАЙН</button>
                   </div>
                 </div>
               </div>
@@ -188,17 +132,25 @@
                   <div class="flip-card-front">
                     <img
                       class="services-img"
-                      width="210"
+                      width="270"
                       height="300"
-                      src="./images/Yaroslav.jpg"
-                      alt="фото Дудник Вадим"
+                      src="./images/polapa-tel@2x-min.png"
+                      alt="фото Марина Полапа"
                     />
                   </div>
                   <div class="flip-card-back">
-                    <h2 class="our-overlay-title">Дудник Вадим</h2>
-                    <p class="our-text">Тренер першої категорії</p>
-                    <p class="our-text">Спеціалізація: силовий тренінг</p>
-                    <button class="our-btn" type="button">ЗАПИС ОНЛАЙН</button>
+                    <h2 class="our-overlay-title">Тренер Premium категорії</h2>
+                    <ol class="text-accent">
+                      <li class="text-accent">
+                        *Майстер спорту України з бодібілдингу
+                      </li>
+                      <li class="text-accent">*Абсолютна чемпіонка Європи</li>
+                      <li class="text-accent">*Чемпіонка світу</li>
+                      <li class="text-accent">
+                        *Багаторазова чемпіонка України
+                      </li>
+                      <li class="text-accent">*Старший менеджер з продажу</li>
+                    </ol>
                   </div>
                 </div>
               </div>
@@ -209,17 +161,126 @@
                   <div class="flip-card-front">
                     <img
                       class="services-img"
-                      width="210"
+                      width="270"
                       height="300"
-                      src="./images/Yaroslav.jpg"
-                      alt="фото Гущина Владислава"
+                      src="./images/maks-tel@2x-min.png"
+                      alt="фото Максим Щербина"
                     />
                   </div>
                   <div class="flip-card-back">
-                    <h2 class="our-overlay-title">Гущина Владислава</h2>
-                    <p class="our-text">Тренер першої категорії</p>
-                    <p class="our-text">Спеціалізація: силовий тренінг, корекція фігури</p>
-                    <button class="our-btn" type="button">ЗАПИС ОНЛАЙН</button>
+                    <h2 class="our-overlay-title">Тренер Premium категорії</h2>
+                    <p class="our-text">Освіта</p>
+                    <p class="our-text2">ПНТУ, Магістр</p>
+                    <ol class="text-accent">
+                      <li class="text-accent">*МС по пауерліфтингу</li>
+                      <li class="text-accent">
+                        *Призер чемпіонату україни 2014
+                      </li>
+                      <li class="text-accent">
+                        *Чемпіон та рекордсмен Полтавської обл.
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team-item">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      class="services-img"
+                      width="270"
+                      height="300"
+                      src="./images/alena-tel@2x-min.png"
+                      alt="фото Олена Дрига"
+                    />
+                  </div>
+                  <div class="flip-card-back">
+                    <h2 class="our-overlay-title">Тренер VIP+ категорії</h2>
+                    <p class="our-text">Освіта</p>
+                    <ol class="text-accent">
+                      <li class="text-accent">*Вища, ХНУВСП</li>
+                    </ol>
+                    <p class="our-text">Спеціалізація</p>
+                    <ol class="text-accent">
+                      <li class="text-accent">*Силовий фітнес</li>
+                      <li class="text-accent">*Корекція фігури</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team-item">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      class="services-img"
+                      width="270"
+                      height="300"
+                      src="./images/daria-tel@2x-min.png"
+                      alt="фото Дар'я Порицька"
+                    />
+                  </div>
+                  <div class="flip-card-back">
+                    <h2 class="our-overlay-title">Тренер VIP категорії</h2>
+                    <p class="our-text">Освіта</p>
+                    <ol class="text-accent">
+                      <li class="text-accent">
+                        *Вища, ПНПУ ім. Короленка (логопедія)
+                      </li>
+                    </ol>
+                    <p class="our-text">Спеціалізація</p>
+                    <ol class="text-accent">
+                      <li class="text-accent">*Силовий тренінг</li>
+                      <li class="text-accent">*Корекція фігури</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team-item">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      class="services-img"
+                      width="270"
+                      height="300"
+                      src="./images/vlad-tel@2x-min.png"
+                      alt="фото Вадим Дудник"
+                    />
+                  </div>
+                  <div class="flip-card-back">
+                    <h2 class="our-overlay-title">Тренер першої категорії</h2>
+                    <p class="our-text">Спеціалізація</p>
+                    <ol class="text-accent">
+                      <li class="text-accent">*Силовий тренінг</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team-item"></li>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      class="services-img"
+                      width="270"
+                      height="300"
+                      src="./images/vlada-tel@2x-min.png"
+                      alt="фото Владислава Гущина"
+                    />
+                  </div>
+                  <div class="flip-card-back">
+                    <h2 class="our-overlay-title">Тренер першої категорії</h2>
+                    <p class="our-text">Спеціалізація</p>
+                    <ol class="text-accent">
+                      <li class="text-accent">*Силовий тренінг</li>
+                      <li class="text-accent">*Корекція фігури</li>
+                    </ol>
                   </div>
                 </div>
               </div>
@@ -228,10 +289,37 @@
         </div>
       </section>
 
-      <section>
-      </section>
+      <section></section>
       <h2>Послуги</h2>
-      <h2>Групові заняття</h2>
+
+
+        <!--section4-->
+     <section class="section">
+        <div class="container">
+          <h2 class="our-title">Групові заняття</h2>
+          <ul class="">
+            <li class="list-group">
+              <img data-aos="zoom-in" class="img-group-left" src="./images/katerina-min.png" alt="">
+            </li>
+            <li class="list-group">
+              <img data-aos="zoom-in-up"class="img-group-right" src="./images/irina-min.png" alt="">
+            </li>
+            <li class="list-group">
+               <img data-aos="zoom-in" class="img-group-left" src="./images/lisa-min.png" alt="">
+            </li>
+            <li class="list-group">
+              <img data-aos="zoom-in-up" class="img-group-right" src="./images/luda-min.png" alt="">
+            </li>
+          </ul> 
+        </div>
+      </section>
     </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+  AOS.init();
+</script>
+
   </body>
 </html>
