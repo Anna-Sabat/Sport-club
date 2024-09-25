@@ -76,7 +76,7 @@
             autoplay
             class="video"
           ></video>
-          <button type="button" class="button">Замовити абонемент</button>
+          <button type="button" class="button" id="go-to-form-btn">Замовити абонемент</button>
         </div>
       </div>
     </header>
@@ -85,146 +85,101 @@
       <!-----------SECTION1----------->
       <section class="section">
         <div class="container">
-          <h2 class="our-title">Про нас</h2>
+          <h2>Про нас</h2>
         </div>
       </section>
 
-      <!--section2-->
-      <section id="our" class="section">
-        <div class="container">
-          <h2 class="our-title">Наша команда</h2>
-          <ul class="team-list">
+
+       <!-----------SECTION2----------->
+      <section>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/lernik-tel@2x-min.png" />
+            <div class="cost">Лернік Матосян</div>
+            <div class="overlay">
+              <h3>Президент клубу</h3>
+              <ol class="text-accent"></ol>
+                <li class="text-accent">*ПДПУ</li>
+                <li class="text-accent">
+                *Факультатив фізичного виховання
+                </li>
+                <li class="text-accent">
+                *Факультатив економіки підприємства
+                  </li>
+                  <li class="text-accent">*Заслужений тренер України</li>
+                  <li class="text-accent">*5-ти разовий чемпіон України з Пауерліфтингу</li>
+              </ol>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/polapa-tel@2x-min.png" />
+            <div class="cost">Марина Полапа</div>
+            <div class="overlay">
+              <h3>Тренер Premium категорії</h3>
+              <ol class="text-accent"></ol>
+                <li class="text-accent">
+                  *Майстер спорту України з бодібілдингу
+                </li>
+                <li class="text-accent">*Абсолютна чемпіонка Європи</li>
+                <li class="text-accent">*Чемпіонка світу</li>
+                <li class="text-accent">
+                  *Багаторазова чемпіонка України
+                </li>
+                <li class="text-accent">*Старший менеджер з продажу</li>
+              </ol>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/maks-tel@2x-min.png" />
+            <div class="cost">Максим Щербина</div>
+            <div class="overlay">
+             <h3>Тренер Premium категорії</h3>
+              <p>Освіта: ПНТУ, Магістр</p>
+              <ol class="text-accent">
+                <li class="text-accent">*МС по пауерліфтингу</li>
+                <li class="text-accent">
+                  *Призер чемпіонату україни 2014
+                </li>
+                <li class="text-accent">
+                  *Чемпіон та рекордсмен Полтавської обл.
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/alena-tel@2x-min.png" alt="фото Олена Дрига"/>
+            <div class="cost">Олена Дрига</div>
+            <div class="overlay">
+              <h1>Тренер Vip+ категорії</h1>
+              <p>Освіта: Вища, ХНУВСП</p>
+              <ol>
+                <li class="">Спеціалізація</li>
+                <li class="text-accent">*Силовий фітнес</li>
+                <li class="text-accent">*Корекція фігури</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
             <li class="team-item">
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
                     <img
-                      class="services-img"
-                      width="270"
-                      height="300"
-                      src="./images/lernik-tel@2x-min.png"
-                      alt="фото Лернік Матосян"
-                    />
-                  </div>
-                  <div class="flip-card-back">
-                    <h2 class="our-overlay-title">Президент клубу</h2>
-                    <p class="our-text">Освіта</p>
-                    <ol class="text-accent">
-                      <li class="text-accent">*ПДПУ</li>
-                      <li class="text-accent">
-                        *Факультатив фізичного виховання
-                      </li>
-                      <li class="text-accent">
-                        *Факультатив економіки підприємства
-                      </li>
-                    </ol>
-                    <p class="our-text">Заслужений тренер України</p>
-                    <p class="our-text">
-                      5-ти разовий чемпіон України з Пауерліфтингу
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="team-item">
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img
-                      class="services-img"
-                      width="270"
-                      height="300"
-                      src="./images/polapa-tel@2x-min.png"
-                      alt="фото Марина Полапа"
-                    />
-                  </div>
-                  <div class="flip-card-back">
-                    <h2 class="our-overlay-title">Тренер Premium категорії</h2>
-                    <ol class="text-accent">
-                      <li class="text-accent">
-                        *Майстер спорту України з бодібілдингу
-                      </li>
-                      <li class="text-accent">*Абсолютна чемпіонка Європи</li>
-                      <li class="text-accent">*Чемпіонка світу</li>
-                      <li class="text-accent">
-                        *Багаторазова чемпіонка України
-                      </li>
-                      <li class="text-accent">*Старший менеджер з продажу</li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="team-item">
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img
-                      class="services-img"
-                      width="270"
-                      height="300"
-                      src="./images/maks-tel@2x-min.png"
-                      alt="фото Максим Щербина"
-                    />
-                  </div>
-                  <div class="flip-card-back">
-                    <h2 class="our-overlay-title">Тренер Premium категорії</h2>
-                    <p class="our-text">Освіта</p>
-                    <p class="our-text2">ПНТУ, Магістр</p>
-                    <ol class="text-accent">
-                      <li class="text-accent">*МС по пауерліфтингу</li>
-                      <li class="text-accent">
-                        *Призер чемпіонату україни 2014
-                      </li>
-                      <li class="text-accent">
-                        *Чемпіон та рекордсмен Полтавської обл.
-                      </li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="team-item">
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img
-                      class="services-img"
-                      width="270"
-                      height="300"
-                      src="./images/alena-tel@2x-min.png"
-                      alt="фото Олена Дрига"
-                    />
-                  </div>
-                  <div class="flip-card-back">
-                    <h2 class="our-overlay-title">Тренер VIP+ категорії</h2>
-                    <p class="our-text">Освіта</p>
-                    <ol class="text-accent">
-                      <li class="text-accent">*Вища, ХНУВСП</li>
-                    </ol>
-                    <p class="our-text">Спеціалізація</p>
-                    <ol class="text-accent">
-                      <li class="text-accent">*Силовий фітнес</li>
-                      <li class="text-accent">*Корекція фігури</li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="team-item">
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img
-                      class="services-img"
-                      width="270"
-                      height="300"
-                      src="./images/daria-tel@2x-min.png"
                       alt="фото Дар'я Порицька"
                     />
                   </div>
                   <div class="flip-card-back">
-                    <h2 class="our-overlay-title">Тренер VIP категорії</h2>
+                    <h5 class="our-overlay-title">Тренер VIP категорії</h5>
                     <p class="our-text">Освіта</p>
                     <ol class="text-accent">
                       <li class="text-accent">
@@ -289,41 +244,68 @@
         </div>
       </section>
 
-      <section></section>
-      <h2>Послуги</h2>
+      
 
+    <div id="tsparticles"></div>
+    <section>
+      <div class="content">
+        <h2>Групові заняття</h2>
+        <p>
+          ПрофесіонаЛ - твій шлях до ідеальго тіла!
+        </p>
+        <button type="button" id="go-to-form-btn">Замовити абонемент</button>
+      </div>
 
-        <!--section4-->
-     <section class="section">
-        <div class="container">
-          <h2 class="our-title"></h2>
-            <a href="#group" href="#" id="group" class="our-title"
-                >Групові заняття</a
-              >
-            </h2>
-          <ul class="">
-            <li class="list-group">
-              <img data-aos="zoom-in" class="img-group-left" src="./images/katerina-min.png" alt="">
-            </li>
-            <li class="list-group">
-              <img data-aos="zoom-in-up"class="img-group-right" src="./images/irina-min.png" alt="">
-            </li>
-            <li class="list-group">
-               <img data-aos="zoom-in" class="img-group-left" src="./images/lisa-min.png" alt="">
-            </li>
-            <li class="list-group">
-              <img data-aos="zoom-in-up" class="img-group-right" src="./images/luda-min.png" alt="">
-            </li>
-          </ul> 
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/katerina-min.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/lisa-min.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/irina-min.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/luda-min.png" />
+          </div>
         </div>
+      </div>
+    
+    </section>
+
+
+
+
+
+      <section class="section">
+        <form action="#" id="form" method="post"><input type="hidden" name="form-name" value="form"> 
+         <div class="body"></div>
+        <div class="ring">
+          <i style="--clr:#19e5f4;"></i>
+          <i style="--clr:#959aa0;"></i>
+          <i style="--clr:#0e0efa;"></i>
+          <div class="login">
+            <h2>Замовити абонемент</h2>
+              <div class="inputBx">
+                <label for="user-name" class="form-field-lable">Ім`я</label>
+                 <input type="text" class="form-field-imput" name="Ім`я" id="user-name">
+              </div>
+              <div class="inputBx">
+                <label for="user-tel" class="form-field-lable">Номер телефону</label>
+                <input type="tel" class="form-field-imput" name="tel" id="user-tel">     
+              </div>
+              <div class="inputBx">
+                <input type="submit" id="launch-btn" value="Замовити">
+              </div>
+          </div>
+        </div>
+      </div>
+    </form>
       </section>
+
     </main>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-  AOS.init();
-</script>
 
   </body>
 </html>
